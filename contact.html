@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <h1>Mon Portfolio</h1>
+    <header>
+       
+        <nav>
+            <ul>
+                 <button> <li><a href="index.html">Accueil</a></li></button>
+                <button><li><a href="about.html">À propos</a></li></button>
+             <button>   <li><a href="cv.html">Mon cv </a></li></button>
+             <button>   <li><a href="competence.html">Compétences</a></li></button>
+               <button> <li><a href="projets.html">Projets</a></li></button>
+              <button>  <li><a href="contact.html">Contact</a></li></button>
+            </ul>
+        </nav>
+    </header>
+    
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contactez-moi</h2>
+    
+                <form id="form">
+
+                    <div>
+                            <label for="firstname">Prénom</label>
+                            <input type="text" id="firstname">
+                    </div>
+            
+                    <div>
+                        <label for="lastname">Nom</label>
+                        <input type="text" id="lastname">
+                    </div>
+            
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+            
+                    <div>
+                        <label for="phone">Telephone</label>
+                        <input type="tel" id="phone">
+                    </div>
+            
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+            
+                    <button type="submit">Envoyer</button>  <p id="messError"></p>
+                    
+                   
+                </form>
+            </div>
+      
+    </section>
+   
+   <script src="script.js"></script>
+</body>
+</html>
