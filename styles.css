@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 header {
-    background-color: blue;  
+    background-color: rgb(0, 195, 255);  
     text-align: center;
     padding: 20px;
 }
@@ -26,17 +26,6 @@ nav ul li a {
     position: relative;/*C'est sa position normal dans le site ca veut dire position par defaut*/
 }
 
-nav ul li a::before{/*le before c'est avant le a */
-    position: absolute;/*C'est une position dont on peut le deplacer la ou ont veut par rapport au parent <a> */
-    content: "";/*Le contenue on le laisse a vide on peut aussi ecrir quelque chose mais la c'est pas notre objectif*/
-    top: 100%;/*Le a:before se situe 100% par rapport au hauteur de son parent*/
-    left: 0;/*Ca commence par le debut*/
-    width: 0;/*Au debut il n'a pas de largeur parcequ'on peut l'animer*/
-    height: 3px;/*Il prend une hauteur de 3px avec une background blanc*/
-    background-color: #fff;
-    transition: width .4s ease;/*La transition de widht va durer 400ms*/
-}
-
 nav ul li a:hover::before{
     width: 100%;/*Si on met le pointeur au survole la largeur se transite */
 }
@@ -45,9 +34,8 @@ nav ul li a:hover::before{
 nav ul li a:hover {
     color: #d1e8ff;
 }
+/*C'est celui ci qui fais l'animation*/ 
 
-
-/*C'est celui ci qui fais l'animation*/
 @keyframes float{
     form{
         opacity: 0;/*De commencer par une opaciter de 0 et une transformation par rapport a l'axe des y de 50px*/
@@ -72,7 +60,7 @@ section {
 h2 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: blue;
+    color: rgb(0, 195, 255);
 }
 p {
     font-size: 15px;
@@ -86,13 +74,13 @@ form input, form textarea, form button {
     font-size: 15px;
 }
 form button {
-    background: blue;
+    background: rgb(0, 195, 255);
     color: white;
     border: none;
     cursor: pointer;
 }
 form button:hover {
-    background:blue;
+    background:rgb(0, 195, 255);
 }
 img{
     width: 200px;
@@ -126,7 +114,7 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .profil {
-    background-color:blue;
+    background-color:rgb(0, 195, 255);
     color:white;
     width :37%;
     padding : 40px 20px;
@@ -153,7 +141,7 @@ nav{
 }
 .section h2 {
     font-size: 1.4em;
-    color: blue;
+    color: rgb(0, 195, 255);
     border-left: 10px solid white;
     padding-left: 10px;
     margin-bottom: 15px; 
@@ -166,9 +154,8 @@ nav{
 }
 .section ul li::before {
     content: "✔";
-    color: blue;
+    color: rgb(0, 195, 255);
     margin-right: 8px;
-    
 }
 h1{
     font-size: 40px;
@@ -176,83 +163,31 @@ h1{
     background-color: black;
     margin-left: 10px;
     border-radius: 50px;
-}
-
-    .skills {
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-    }
+} 
     .category {
         width: 45%;
-    }
-    .category h2 {
-        margin-bottom: 20px;
-        color: blue;
     }
     .skill {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+       
         margin-bottom: 15px;
     }
-    .skill p {
-        margin: 0 10px;
-    }
-    .aa {
-        flex: 1;
-        height: 10px;
-        background-color: #ccc;
-        border-radius: 5px;
-        overflow: hidden;
-        margin: 0 10px;
-    }
-    .aa span {
-        display: block;
-        height: 100%;
-        background-color:blue;
-        border-radius: 5px;
-    }  .section{ 
+      .section{ 
         width: 600px;
     }
     /* Style global */
-main {
-    padding: 20px;
-}
 
 .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
 }
-
-.category {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-}
-
-.category h2 {
-    text-align: center;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.skill {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
 .skill .label {
     width: 30%;
 }
-
 .progress {
     width: 60%;
     background-color: #f0f0f0;
@@ -260,28 +195,7 @@ main {
     overflow: hidden;
     height: 10px;
 }
-
 .progress-bar {
     height: 100%;
-    background-color: blue;
-}
-
-.percentage {
-    width: 10%;
-    text-align: right;
-}
-
-.tags {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tag {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    background-color: rgb(0, 195, 255);
 }
